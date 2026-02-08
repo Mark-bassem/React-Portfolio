@@ -1,0 +1,92 @@
+/* ==============================
+        table of contents
+============================== */
+
+/* 
+    1-Hero Section
+    2-Left section
+    3-Parent avatar
+    4-Avatar image
+    5-Verified icon
+    6-Title
+    7-Subtitle
+    8-Icons container
+*/
+
+/* ==============================
+        1-Hero Section
+============================== */
+section.hero {
+  margin-top: 3rem;
+}
+
+/* ==============================
+        2-Left section
+============================== */
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+/* ==============================
+        3-Parent avatar
+============================== */
+section.hero .parent-avatar.flex {
+  align-items: end;
+  gap: 0.6rem;
+}
+
+/* ==============================
+        4-Avatar image
+============================== */
+section.hero img.avatar {
+    width: 88px;
+    border-radius: 50%;
+    border: 1px solid darkgreen;
+    box-shadow: 1px 1px 40px rgba(203, 200, 200, 0.274) inset;
+    padding: 2px;
+}
+
+/* ==============================
+        5-Verified icon
+============================== */
+section.hero .icon-verified {
+    color: var(--blue);
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+/* ==============================
+        6-Title
+============================== */
+section.hero h1.title {
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+
+/* ==============================
+        7-Subtitle
+============================== */
+section.hero p.subtitle {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    margin-bottom: 32px;
+    color: var(--subtitle);
+}
+
+/* ==============================
+        8-Icons container
+============================== */
+section.hero .icons {
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+}
+
+section.hero .icons .icon:hover {
+    font-size: 1.4rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--icon-hover);
+}
