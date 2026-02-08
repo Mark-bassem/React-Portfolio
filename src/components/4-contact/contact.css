@@ -1,0 +1,111 @@
+/* ========================
+    table of contents
+=========================== */
+
+/* 
+    1-Contact Section
+    2-Responsive Design (media query)
+*/
+
+/* ========================
+    1-Contact Section
+=========================== */
+section.contact .icon-envelope {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  color: var(--subtitle);
+}
+
+section.contact .title {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  color: var(--title);
+}
+
+section.contact .sub-title {
+  margin-bottom: 2rem;
+  line-height: 1.65rem;
+  color: var(--subtitle);
+}
+
+section.contact label {
+  color: var(--subtitle);
+}
+
+section.contact #email,
+section.contact #message {
+  all: unset;
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  border: 1px solid rgb(63 63 70);
+  border-radius: 5px;
+  background-color: rgba(63, 63, 70, 0.15);
+  transition: 0.3s;
+}
+
+section.contact #email:fo,
+section.contact #message:fo {
+  border: 1px solid rgb(45 212 191);
+}
+
+section.contact #email:hover,
+section.contact #message:hover {
+  border: 1px solid rgb(45 212 191);
+}
+
+section.contact #message {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+section.contact .submit {
+  padding: 0.75rem 2rem;
+  margin-top: 1.8rem;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  border: 1px solid rgb(63 63 70);
+  border-radius: 5px;
+  background-color: rgba(36, 37, 46, 1);
+  transition: 0.3s;
+}
+
+section.contact .submit:hover {
+  scale: 0.97;
+}
+
+/* =====================================
+        2-Responsive Design
+======================================== */
+
+@media (max-width: 600px) {
+  section.contact .animation {
+    display: none;
+  }
+
+  section.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  section.contact form div.flex {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  section.contact #email,
+  section.contact #message {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.7rem 0;
+    margin-top: 1rem;
+  }
+
+  section.contact .submit {
+    width: 30%;
+    align-self: center;
+  }
+}
