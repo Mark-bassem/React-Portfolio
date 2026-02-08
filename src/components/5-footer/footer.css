@@ -1,0 +1,46 @@
+/* ========================
+    table of contents
+=========================== */
+
+/* 
+    1-Footer Section
+    2-Responsive Design (media query)
+*/
+
+/* ========================
+      1-Footer Section
+=========================== */
+footer.flex {
+  justify-content: space-between;
+  padding-bottom: 1.9rem;
+}
+
+footer.flex ul {
+  gap: 1rem;
+}
+
+footer.flex ul a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--subtitle);
+}
+
+footer.flex ul a:hover {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+footer.flex p {
+  color: rgb(113 113 122);
+}
+
+/* ===========================
+      2-Responsive Design
+=========================== */
+@media (max-width: 800px) {
+  footer.flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
